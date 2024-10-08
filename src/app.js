@@ -12,4 +12,8 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/users', userRoutes);
 
+app.get('/health', (req, res) => {
+    res.status(200).send('Server is healthy');
+  });  
+
 module.exports = app;
