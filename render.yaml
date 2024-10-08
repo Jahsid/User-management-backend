@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: user-management-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://muhammedjahsid:sbe6VDtfdwVDvLJL@cluster0.gdpcv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
